@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
     Animator anim;
     AudioSource enemyAudio;
     ParticleSystem hitParticles;
-    CapsuleCollider capsuleCollider;
+    CapsuleCollider capsuleCollider; 
     bool isDead;
     bool isSinking;
 
