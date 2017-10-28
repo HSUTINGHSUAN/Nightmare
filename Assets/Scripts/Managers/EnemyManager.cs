@@ -23,6 +23,6 @@ public class EnemyManager : MonoBehaviour
 
         int spawnPointIndex = Random.Range (0, spawnPoints.Length); //隨機產生一個Range(最小是0，最大是Length)
 
-        Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation); //Instantiate 複製一個東西(複製的東西，產生位置，旋轉量)
+        Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation); //Instantiate 複製一個東西(複製的東西，產生位置，旋轉量<朝向哪裡>)
     }
 }
