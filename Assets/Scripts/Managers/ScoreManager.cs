@@ -4,7 +4,7 @@ using System.Collections;
 
 public class ScoreManager : MonoBehaviour
 {
-    public static int score;
+    public static int score;//靜態變數 //可以直接用 ScoreManager.score //只能有一個變數實體 //遊戲裡面只能有一個score
 
 
     Text text;
@@ -19,6 +19,6 @@ public class ScoreManager : MonoBehaviour
 
     void Update ()
     {
-        text.text = "Score: " + score;
+        text.text = "Score: " + score;//只要有人改值，就會改變內容
     }
 }
