@@ -15,7 +15,7 @@ public class EnemyAttack : MonoBehaviour
     float timer;
 
 
-    void Awake ()
+    void Awake ()//程式執行觸發一次
     {
         player = GameObject.FindGameObjectWithTag ("Player");
         playerHealth = player.GetComponent <PlayerHealth> ();
