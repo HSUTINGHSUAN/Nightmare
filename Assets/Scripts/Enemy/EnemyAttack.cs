@@ -15,7 +15,7 @@ public class EnemyAttack : MonoBehaviour
     float timer;
 
 
-    void Awake ()//程式執行觸發一次
+    void Awake ()
     {
         player = GameObject.FindGameObjectWithTag ("Player");
         playerHealth = player.GetComponent <PlayerHealth> ();
@@ -46,7 +46,7 @@ public class EnemyAttack : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(timer >= timeBetweenAttacks && playerInRange/* && enemyHealth.currentHealth > 0*/)
+        if(timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0)
         {
             Attack ();
         }
